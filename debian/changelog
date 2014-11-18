@@ -1,4 +1,4 @@
-ruby-puppetlabs-spec-helper (0.8.0-1) stable; urgency=medium
+ruby-puppetlabs-spec-helper (0.8.2-2) stable; urgency=medium
 
   * Remove version requirement on gem2deb
   * Update to newest version, to get forge_modules capabilities for fixtures

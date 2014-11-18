@@ -20,6 +20,8 @@ Depends: ${shlibs:Depends},
          ruby-rspec (>= 2.9.0),
          ruby-mocha (>= 0.10.5),
          ruby-rspec-puppet (>= 0.1.1),
+         puppet-lint,
+         ruby-puppet-syntax
 Description: rake tasks and spec helper for spec tests on puppet modules
  Puppet lets you centrally manage every important aspect of your system
  using a cross-platform specification language that manages all the
