@@ -1,0 +1,21 @@
+From: Stig Sandbeck Mathisen <ssm@debian.org>
+Date: Mon, 17 Mar 2014 12:15:30 +0100
+Subject: Avoid use of "gem" for loading rspec
+
+---
+ lib/puppetlabs_spec_helper/puppet_spec_helper.rb | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/lib/puppetlabs_spec_helper/puppet_spec_helper.rb b/lib/puppetlabs_spec_helper/puppet_spec_helper.rb
+index 9fb92f9..d1c2ae3 100644
+--- a/lib/puppetlabs_spec_helper/puppet_spec_helper.rb
++++ b/lib/puppetlabs_spec_helper/puppet_spec_helper.rb
+@@ -7,7 +7,7 @@ ARGV.clear
+ ENV['MOCHA_OPTIONS']='skip_integration'
+ 
+ require 'puppet'
+-gem 'rspec', '>=2.0.0'
++require 'rspec'
+ require 'rspec/expectations'
+ require 'mocha/api'
+ 

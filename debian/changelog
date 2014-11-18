@@ -1,0 +1,21 @@
+ruby-puppetlabs-spec-helper (0.8.0-1) stable; urgency=medium
+
+  * Remove version requirement on gem2deb
+  * Update to newest version, to get forge_modules capabilities for fixtures
+
+ -- Javier Palacios <javier.palacios@fon.com>  Tue, 26 Aug 2014 12:42:31 +0200
+
+ruby-puppetlabs-spec-helper (0.4.1-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Stig Sandbeck Mathisen ]
+  * Add patch to avoid use of "gem" (Closes: #741331)
+
+ -- Cédric Boutillier <boutil@debian.org>  Mon, 21 Jul 2014 22:17:01 +0200
+
+ruby-puppetlabs-spec-helper (0.4.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #730843)
+
+ -- Thomas Bechtold <thomasbechtold@jpberlin.de>  Fri, 29 Nov 2013 15:58:56 +0100

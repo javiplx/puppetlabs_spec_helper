@@ -1,0 +1,31 @@
+Source: ruby-puppetlabs-spec-helper
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Thomas Bechtold <thomasbechtold@jpberlin.de>
+Build-Depends: debhelper (>= 7.0.50~), gem2deb
+Standards-Version: 3.9.5
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-puppetlabs-spec-helper.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ruby-extras/ruby-puppetlabs-spec-helper.git;a=summary
+Homepage: http://github.com/puppetlabs/puppetlabs_spec_helper
+XS-Ruby-Versions: all
+
+Package: ruby-puppetlabs-spec-helper
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         ruby | ruby-interpreter,
+         rake,
+         ruby-rspec (>= 2.9.0),
+         ruby-mocha (>= 0.10.5),
+         ruby-rspec-puppet (>= 0.1.1),
+Description: rake tasks and spec helper for spec tests on puppet modules
+ Puppet lets you centrally manage every important aspect of your system
+ using a cross-platform specification language that manages all the
+ separate elements normally aggregated in different files, like users,
+ cron jobs, and hosts, along with obviously discrete elements like
+ packages, services, and files.
+ .
+ This ruby module contains rake tasks and a standard spec_helper for
+ running spec tests on puppet modules.
