@@ -1,9 +1,10 @@
-ruby-puppetlabs-spec-helper (0.8.2-2) stable; urgency=medium
+ruby-puppetlabs-spec-helper (0.8.2-3) stable; urgency=medium
 
+  * Patch to enable private forges
   * Remove version requirement on gem2deb
   * Update to newest version, to get forge_modules capabilities for fixtures
 
- -- Javier Palacios <javier.palacios@fon.com>  Tue, 26 Aug 2014 12:42:31 +0200
+ -- Javier Palacios <javier.palacios@fon.com>  Tue, 25 Nov 2014 13:40:08 +0100
 
 ruby-puppetlabs-spec-helper (0.4.1-2) unstable; urgency=medium
 

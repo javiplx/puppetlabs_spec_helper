@@ -122,6 +122,7 @@ task :spec_prep do
     unless system("puppet module install " + ref + \
                   " --ignore-dependencies" \
                   " --force" \
+                  + ( opts['scm'].nil? ? "" : " --module_repository #{opts['scm']}" ) + \
                   " --target-dir spec/fixtures/modules #{remote}")
       fail "Failed to install module #{remote} to #{target}"
     end
